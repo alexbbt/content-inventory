@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Preview</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="external/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <h1 class="text-center">Preview</h1>
+        <button id="clear-all" class="btn pull-right">Clear Data</button>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#csv" aria-controls="csv" role="tab" data-toggle="tab">CSV</a></li>
+                <li role="presentation"><a href="#json" aria-controls="json" role="tab" data-toggle="tab">JSON</a></li>
+                <li role="presentation"><a href="#table" aria-controls="table" role="tab" data-toggle="tab">Table</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="csv"><div id="csv_preview"></div></div>
+                <div role="tabpanel" class="tab-pane" id="json"><pre id="json_preview"></pre></div>
+                <div role="tabpanel" class="tab-pane" id="table"><div id="table_preview"></div></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="external/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="external/bootstrap.min.js"></script>
+
+        <script src="preview.js"></script>
+    </body>
+</html>
